@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smit_form</title>
+</head>
+<style>
+    .a {
+    
+      width: 45%;
+      border: 3px solid hsl(0, 43%, 99%);
+
+    }
+
+    .a select {
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #14f044;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .b select {
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #14f044;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+     .p{
+        font-size: large;
+      }
+      .a input{
+        width: 80%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #14f044;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .b input{
+        width: 80%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #14f044;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .a label{
+        font-size: larger;
+        color: #059398;
+    }
+    .b label{
+        font-size: larger;
+        color: #059398;
+
+    }
+    .b {
+        
+        margin-top:-47%;
+        margin-left: auto;
+        width: 45%;
+        border: 3px solid hsl(0, 43%, 99%);
+ 
+    }
+    .c label{
+      color: #059398;
+      font-size: larger;
+
+    }
+    .c input{
+        width: 91%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #14f044;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #imageInputContainer {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        #imageInput {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #plusSign {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: black;
+        }
+.d label{
+  font-size: larger;
+  border-color: #059398;
+}
+.e input{
+  background-color: #1379ed;
+  width: 100%;
+  color:white;
+  height: 8%;
+}  
+
+</style>
+<body>
+    <form>
+      <h1 style="text-align: center;">Saylani Registration form</h1>
+        <div class="a">
+        </br>
+            <label for="city">Select city:</label>
+        </br></br>
+            <select id="dropdown" name="dropdown" width="30px">
+              <option value="" disabled selected>Select city</option>
+              <option value="Karachi" >Karachi</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Peshawar">Peshawar</option>
+              <option value="Islamabad">Islamabad</option>
+            </select>
+        </br> </br>           
+        <label for="full name">Full name:</label>
+        </br></br>
+        <input type="text" size="18" placeholder="Full name"/>
+
+        </br> </br>           
+        <label for="Email">Email:</label>
+        </br> </br>           
+        <input type="email" placeholder="Email"/>
+        </br> </br>           
+        <label for="CNIC">CNIC:</label>
+        </br> </br>           
+        <input type="text" size="15" placeholder="CNIC"/>
+        </br> </br>
+        <label for="Date of birth:">Date of birth:</label>
+       </br> </br>           
+       <input type="date" />    
+        </div>
+
+        <div class="b">
+        </br>
+    <label for="course or event">Enter course or event:</label>
+    </br></br>
+    <select id="dropdown" name="dropdown" width="30px">
+        <option value="" disabled selected>Select course or event</option>
+        <option value="WMA" >WMA</option>
+        <option value="Graphic Designing">Graphic designing</option>
+        <option value="AI chatbot">AI Chatbot</option>
+        <option value="Flutter development">Flutter Development</option>
+      </select>
+    </br> </br>           
+    <label for="father name">Father name:</label>
+    </br></br>
+    <input type="text" size="25" placeholder="Father name"/>
+
+    </br> </br>           
+
+<label for="Phone no">Phone no:</label>
+</br></br>
+<input type="text" size="25" placeholder="Phone no"/>
+</br> </br>                
+<label for="Father's CNIC">Father'sCNIC:</label>
+</br> </br>           
+<input type="text" id="optional"  placeholder="Father's CNIC(Optional)"/>
+</br> </br>
+<label for="select gender">Select gender:</label>
+</br></br>
+<select id="dropdown" name="dropdown" width="30px">
+  <option value="" disabled selected>Select gender</option>
+  <option value="Male" >Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+  
+</select>
+  </div>
+  <div class="c">
+</br></br>
+<label for="Address">Address:</label>
+</br></br>
+<input type="text" placeholder="Address"/>
+
+</br></br>
+<label for="Last Qualification">Last Qualification:</label>
+</br></br>
+<input type="text" placeholder="Last Qualification"/>
+
+</br></br>
+<label for="Did you have a laptop?">Did you have a laptop?</label>
+</br></br>
+<input type="text" placeholder="Did you have a laptop?"/>
+
+
+</div>
+</br></br>
+<div class="d">
+<label for="Picture">Picture:</label>
+</div></br>
+
+
+<div id="imageInputContainer">
+  
+  <label for="imageInput">
+      <div id="plusSign">+</div>
+  </label>
+  <input type="file" id="imageInput" name="imageInput" accept="image/*">
+</div>
+</br></br>
+<div class="e">
+<input type="submit" name="button" />
+</div>
+
+    
+    </form>
+</body>
+</html>
